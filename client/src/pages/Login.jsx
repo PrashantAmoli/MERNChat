@@ -46,11 +46,12 @@ export default function Login() {
     event.preventDefault();
     if (validateForm()) {
       const { username, password } = values;
+      console.log("Login.jsx")
       const { data } = await axios.post(loginRoute, {
         username,
         password,
       });
-      console.log(`Login Request Response: ${data}`)
+      console.log(`Login Request Response: ${ data }`)
       if (data.status === false) {
         toast.error(data.msg, toastOptions);
       }
