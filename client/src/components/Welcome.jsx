@@ -4,7 +4,7 @@ import Robot from "../assets/robot.gif";
 import Logout from "./Logout";
 export default function Welcome() {
   const [userName, setUserName] = useState("");
-  useEffect(()=>{
+  useEffect(async ()=>{
    const setTheState = async () => {
       setUserName(
         await JSON.parse(
@@ -12,7 +12,7 @@ export default function Welcome() {
         ).username
       );
     };
-    setTheState();
+    await setTheState();
   }, []);
   return (
     <Container>
@@ -22,9 +22,12 @@ export default function Welcome() {
       </div>
       <img src={Robot} alt="" />
       <h1>
-        Welcome, <span>{userName}!</span>
+        Welcome, <span>{ userName }!</span>
       </h1>
       <h3>Please select a chat to Start messaging.</h3>
+      <h2>Most id's have been preloaded for you to test the app with the password being same as username.</h2>
+      <h2>username: elonmusk</h2>
+      <h2>password: elonmusk</h2>
     </Container>
   );
 }
