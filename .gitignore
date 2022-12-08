@@ -5,3 +5,4 @@ build
 .env
 ./client/.env
 ./server/.env
+./client/build

@@ -46,7 +46,7 @@ export default function Login() {
     event.preventDefault();
     if (validateForm()) {
       const { username, password } = values;
-      console.log("Login.jsx")
+      console.log(`Login.jsx ${ loginRoute }`)
       const { data } = await axios.post(loginRoute, {
         username,
         password,
