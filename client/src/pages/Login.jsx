@@ -29,11 +29,14 @@ export default function Login() {
 
   const validateForm = () => {
     const { username, password } = values;
-    if (username === "") {
-      toast.error("Email and Password is required.", toastOptions);
+    if(username === "" && password === ""){
+      toast.error("Username and Password are required.", toastOptions);
+      return false;
+    } else if (username === "") {
+      toast.error("Username is required.", toastOptions);
       return false;
     } else if (password === "") {
-      toast.error("Email and Password is required.", toastOptions);
+      toast.error("Password is required.", toastOptions);
       return false;
     }
     return true;
@@ -47,6 +50,7 @@ export default function Login() {
         username,
         password,
       });
+      console.log(`Login Request Response: ${data}`)
       if (data.status === false) {
         toast.error(data.msg, toastOptions);
       }
