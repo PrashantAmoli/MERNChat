@@ -11,9 +11,9 @@
 > - Now start the server by `npm run dev` and react by `yarn start`
 
 
-<div>
-  <img src="https://user-images.githubusercontent.com/72202929/206854586-db3048d3-b07d-4453-9f86-882dbc9c1854.png" height="300" align="left" />
-  <img src="https://user-images.githubusercontent.com/72202929/206854606-5925d006-a7cf-4344-9372-07d5fbf3d1e9.png" height="300" align="right" />
-  <img src="https://user-images.githubusercontent.com/72202929/206854594-26d0fe49-814f-445b-8c9d-f31bbb3f07d3.png" height="300" align="left" />
-  <img src="https://user-images.githubusercontent.com/72202929/206854565-933d7407-0905-4fef-b23f-2862b171e94e.png" height="300" align="right" />
+<div align="center" gap="10">
+  <img src="https://user-images.githubusercontent.com/72202929/206854565-933d7407-0905-4fef-b23f-2862b171e94e.png" height="240" align="center" />
+  <img src="https://user-images.githubusercontent.com/72202929/206854606-5925d006-a7cf-4344-9372-07d5fbf3d1e9.png" height="240" align="right" />
+  <img src="https://user-images.githubusercontent.com/72202929/206854594-26d0fe49-814f-445b-8c9d-f31bbb3f07d3.png" height="240" align="left" />
+  <img src="https://user-images.githubusercontent.com/72202929/206854586-db3048d3-b07d-4453-9f86-882dbc9c1854.png" height="240" align="center" />
 </div>
